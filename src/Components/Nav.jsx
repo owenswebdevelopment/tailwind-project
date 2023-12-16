@@ -1,4 +1,6 @@
+import React from 'react';
 import { Link, ScrollLink } from "react-scroll";
+import Footer from './Footer';
 
 const Nav = () => {
   const content = <>
@@ -18,6 +20,12 @@ const Nav = () => {
   <Link to="Register">
   <li>Register</li>
   </Link>
+
+  <Link to="Footer">
+  <li>Footer</li>
+  </Link>
+
+
 </ul>
   </div>
   </>
@@ -26,9 +34,9 @@ const Nav = () => {
 <div className="w-full">
 <nav className="border-b border-gray-200">
 <div className="h-10vh flex justify-between z-50 text-color-[#255bb3] lg:py-5 px-20 py-4">
-  <div className="flex flex-col items-center flex-1">
-    <span className="text-sm ml-2 text-[#255bb3]">工場の「困った」イマ解決する</span>
-    <span className="text-3xl font-bold">ASNARO</span>
+  <div className="flex flex-col items-center flex-1  ml-[-20rem]">
+    <span className="text-sm ml-2 text-[#255bb3] p-2">工場の「困った」イマ解決する</span>
+    <span className="text-3xl font-bold pr-12">ASNARO</span>
   </div>
   <div className="lg:flex md:flex lg:flex-1 items-center justify-end">
   
@@ -58,7 +66,7 @@ const Nav = () => {
 
         {/* This is the dropdown but i'm not sure its the best solution */}
         <select className="border px-2 py-2 focus:outline-none focus:ring focus:border-blue-300">
-          <option value="Teacher">Teacher</option>
+          <option value="Teacher">絞り込み</option>
           <option value="keyword">Doctor</option>
           <option value="dropdown">Nurse</option>
         </select>
@@ -83,7 +91,17 @@ const Nav = () => {
   </div>
 </div>
    </nav>
+
+   <div>
+   <Link to="Footer">
+   <footer className="bg-gray-200 text-center py-4">
+      <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+    </footer>
+  </Link>
+   </div>
   </div>
+
+  
   );
 };
 
