@@ -8,7 +8,7 @@ const Signup = () => {
         
       <div>
       <div className="mb-4 text-center">
-      <p className='my-10 text-2xl text-blue-500 text-center font-bold mr-[40px] md:mr-[114px] '>Login Screen</p>
+      <p className='my-10 text-2xl text-blue-500 text-center font-bold mr-[40px] md:mr-[114px] '>ログイン画面</p>
         <label htmlFor="email" className="block text-gray-600 text-sm font-semibold mb-4 mr-[100px] md:mr-[164px]">
           Email Address 
         </label>
@@ -33,7 +33,7 @@ const Signup = () => {
         />
       </div>
 
-      <div className='text-center mb-6'>
+      <div className='text-center mb-6 md:mr-16'>
         <label htmlFor="checkbox"　className='flex justify-center text-gray-600 text-sm p-4'>
         <input type="checkbox"  id="record_email" name="record_email"className='mr-2'/>
         メールアドレスを記録する 
@@ -45,10 +45,13 @@ const Signup = () => {
       className='w-[70%] bg-[#255bb3] hover:bg-[#6d94d1] text-white text-md font-serif rounded-sm p-2'>SUBMIT</button>
       </div>
 
-      <div　className='flex justify-between py-8'>
-<a href="/newregistration" className='hover:underline text-blue-500 text-[12px] ml-14 '>新規会員登録</a>
-<a href="/forgotpassword" className='hover:underline text-blue-500 text-[12px] mr-14'>パスワード忘れた方はこちら</a>
-      </div>
+      <div className='flex flex-col md:flex-row justify-between items-center py-8'>
+  <a href="/newregistration" className='hover:underline text-blue-500 text-[10px] mb-4 md:mb-0 md:ml-14 md:text-[12px]'>新規会員登録</a>
+  <a href="/forgotpassword" className='hover:underline text-blue-500 text-[10px] md:text-[12px] md:mr-14'>パスワード忘れた方はこちら</a>
+</div>
+
+
+
       </div>
 
       </form>

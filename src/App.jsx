@@ -7,7 +7,7 @@ const App = () => {
     <div className="bg-white-900">
       <Nav />
       <Signup />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

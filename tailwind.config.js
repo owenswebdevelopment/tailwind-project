@@ -13,7 +13,7 @@ export default {
         "asnaro-grey": "#d9d9d9",
     },
     screens: {
-      sm: '1015px',
+      sm: '',
     },
     },
   },
