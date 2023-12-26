@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 
 const Nav = () => {
- const [nav, setNav] = useState(false);
+ const [nav, setNav] = useState(true);
 
 const handleNav = () => {
   setNav(!nav);
@@ -69,16 +69,16 @@ const handleNav = () => {
   <div onClick={handleNav} className='block lg:hidden'>
   {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={25}/>}
 </div>
-<div className={!nav ? 'lg:hidden px-4 fixed top-0 left-0 w-[60%] h-full border-r border-r-gray-50 bg-gray-500 ease-in-out duration-500' : 'fixed left-[-100%]'}>
+<div className={!nav ? 'lg:hidden px-4 fixed top-0 left-0 w-[60%] h-full border-r border-r-gray-50 bg-gray-200 ease-in-out duration-500' : 'fixed left-[-100%]'}>
 <div className=" pt-5 pb-2">
     <span className="">工場の「困った」イマ解決する</span>
     <h1 className="w-full text-3xl font-bold">ASNARO</h1>
   </div>
   <ul className='pt-2 uppercase font-bold'>
-    <li className='p-4 border-b hover:border-gray-500'>Home</li>
-    <li className='p-4 border-b hover:border-gray-500'>Search</li>
-    <li className='p-4 border-b hover:border-gray-500'>Sign-in</li>
-    <li className='p-4 border-b hover:border-gray-500'>Register</li>
+    <a href="#home"><li className='p-4 border-b hover:border-gray-400'>Home</li></a>
+    <a href="#Search"><li className='p-4 border-b hover:border-gray-400'>Search</li></a>
+    <a href="#Sign-in"> <li className='p-4 border-b hover:border-gray-400'>Sign-in</li></a>
+    <a href="#Register"><li className='p-4 border-b hover:border-gray-400'>Register</li></a> 
   </ul>
 </div>
 </div>
