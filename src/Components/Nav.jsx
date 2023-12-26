@@ -11,18 +11,17 @@ const handleNav = () => {
 
 
   return (
-<div className="w-full h-100vh">
 
 <form className="border-b border-gray-200">
 <div className="h-100vh flex justify-between z-100 text-color-[#255bb3] lg:py-5 px-20 py-4">
-  <div className="flex flex-col items-center flex-1  ml-[-20rem]">
-    <span className="text-sm ml-2 text-[#255bb3] p-2">工場の「困った」イマ解決する</span>
-    <span className="text-3xl font-bold pr-12">ASNARO</span>
+  <div className="flex flex-col items-center  ml-2 md:ml-0">
+    <span className="hidden md:flex  text-sm ml-2 text-[#255bb3] p-2">工場の「困った」イマ解決する</span>
+    <span className="md:flex text-3xl font-bold pr-12 sm:mr-2">ASNARO</span>
   </div>
   <div className="lg:flex md:flex lg:flex-1 items-center justify-end">
   
     
-  <ul className="hidden md:flex gap-4 mr-16 text-[15px]">
+  <ul className="hidden gap-4 mr-16 text-[15px] lg:flex">
 
   
   <div className="flex items-center">
@@ -67,10 +66,10 @@ const handleNav = () => {
 </ul>
 
   </div>
-  <div onClick={handleNav} className='block md:hidden'>
+  <div onClick={handleNav} className='block lg:hidden'>
   {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={25}/>}
 </div>
-<div className={!nav ? 'md:hidden px-4 fixed top-0 left-0 w-[60%] h-full border-r border-r-green-50 bg-gray-500 ease-in-out duration-500' : 'fixed left-[-100%]' }>
+<div className={!nav ? 'lg:hidden px-4 fixed top-0 left-0 w-[60%] h-full border-r border-r-gray-50 bg-gray-500 ease-in-out duration-500' : 'fixed left-[-100%]'}>
 <div className=" pt-5 pb-2">
     <span className="">工場の「困った」イマ解決する</span>
     <h1 className="w-full text-3xl font-bold">ASNARO</h1>
@@ -85,7 +84,6 @@ const handleNav = () => {
 </div>
 </form>
 
-  </div>
 
   );
 };
